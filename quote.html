@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="Dorin Grigoras [www.stepofweb.com]" />
+    <title>Rocket Elevators</title>
+    <link rel="icon" href="assets/images/rocketElevators/rocketIcon.png" />
+
+    <!-- MOBILE SETTINGS -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+    <!-- WEB FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+    <!-- CORE CSS -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- REVOLUTION SLIDER -->
+    <link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+    <!-- THEME CSS -->
+    <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+    <link rel="icon" type="image/x-icon" href="/assets/RocketElevatorAssets/favicon (3).ico" />
+
+    <style>
+        .quote-form {
+            margin: 40px auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            max-width: 800px;
+        }
+        .quote-form h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .quote-form .form-group {
+            margin-bottom: 20px;
+        }
+        .quote-form .form-control {
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .quote-form .step-title {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+        .quote-form .radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .quote-form .radio-group label {
+            flex: 1;
+            text-align: center;
+            margin-right: 10px;
+        }
+        .quote-form .radio-group input {
+            margin-right: 5px;
+        }
+        .quote-form .price-breakdown {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        .quote-form .price-breakdown p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="smoothscroll enable-animation">
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+    <!-- /SCROLL TO TOP -->
+
+    <!-- WRAPPER -->
+    <div id="wrapper">
+        <!-- HEADER -->
+        <header id="header" class="navbar-toggleable-md sticky header-md clearfix">
+            <div id="topNav">
+                <div class="container">
+                    <!-- Mobile Menu Button -->
+                    <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Logo -->
+                    <a class="logo float-left scrollTo" href="#top">
+                        <img src="./assets/images/rocketElevators/rocketLogo.png" alt="" />
+                    </a>
+
+                    <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+                        <nav class="nav-main">
+                            <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+                                <li class="active"><a href="#top">HOME</a></li>
+                                <li><a href="#services">SERVICES</a></li>
+                                <li><a href="#portfolio">PORTFOLIO</a></li>
+                                <li><a href="#news">NEWS</a></li>
+                                <li><a href="#clients">CLIENTS</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /HEADER -->
+
+        <!-- QUOTE FORM -->
+        <div class="quote-form container">
+            <h3>STEP 1 | Select Type of Building</h3>
+            <div class="form-group">
+                <select class="form-control">
+                    <option>Residential</option>
+                    <option>Commercial</option>
+                    <option>Industrial</option>
+                </select>
+            </div>
+
+            <h3>STEP 2 | Provide Building Information</h3>
+            <div class="form-group row">
+                <div class="col-md-4">
+                    <input type="number" class="form-control" placeholder="Number of Apartments">
+                </div>
+                <div class="col-md-4">
+                    <input type="number" class="form-control" placeholder="Number of Floors">
+                </div>
+                <div class="col-md-4">
+                    <input type="number" class="form-control" placeholder="Number of Elevators">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="Maximum Occupancy">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="Number of Elevators Required (Minimum of 1)">
+                <small class="form-text text-muted">* With exception for commercial buildings</small>
+            </div>
+
+            <h3>STEP 3 | Select Product Line</h3>
+            <div class="form-group">
+                <p>* Excluding tax and offers (if applicable)</p>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="product_line" value="standard"> STANDARD
+                    </label>
+                    <label>
+                        <input type="radio" name="product_line" value="premium"> PREMIUM
+                    </label>
+                    <label>
+                        <input type="radio" name="product_line" value="excelium"> EXCELIUM
+                    </label>
+                </div>
+            </div>
+
+            <h3>STEP 4 | Estimated Pricing</h3>
+            <div class="price-breakdown">
+                <p>Unit Price: <span id="unit-price">$0.00</span></p>
+                <p>Elevator Cost: <span id="elevator-cost">$0.00</span></p>
+                <p>Installation Fees: <span id="installation-fees">$0.00</span></p>
+                <p>Total Cost: <span id="total-cost">$0.00</span></p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer id="footer" style="color: #fff; background: #0a65a0; padding-top: 40px;">
+            <div class="container">
+                <div class="row">
+                    <!-- col #1 -->
+                    <div class="col-md-8">
+                        <h3 onmouseover="this.style.color= '#A94545'" onmouseout="this.style.color= '#fff'" class="letter-spacing-1">
+                            WHY US?
+                        </h3>
+                        <!-- Small Description -->
+                        <p style="font-family: 'Roboto Slab', serif">
+                            Our local networks of highly qualified, experienced service technicians can keep your equipment performing at its peak, whether you have one elevator or thousands.
+                        </p>
+                        <h2 style="font-weight: 800">(800) 123-4567</h2>
+                    </div>
+                    <!-- /col #1 -->
+
+                    <!-- col #2 -->
+                    <div class="col-md-4">
+                        <h3 onmouseover="this.style.color= '#A94545'" onmouseout="this.style.color= '#fff'" class="letter-spacing-1">
+                            KEEP IN TOUCH
+                        </h3>
+                        <!-- Newsletter Form -->
+                        <p style="font-family: 'Roboto Slab', serif">
+                            Subscribe to Our Newsletter to get Important News & Offers
+                        </p>
+                        <form class="validate" action="assets/php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="submit">Subscribe</button>
+                                </span>
+                            </div>
+                        </form>
+                        <!-- /Newsletter Form -->
+                    </div>
+                    <!-- /col #2 -->
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="container">
+                    <ul class="float-right m-0 list-inline mobile-block">
+                        <li><a href="">Terms &amp; Conditions</a></li>
+                        <li>&bull;</li>
+                        <li><a href="">Privacy</a></li>
+                    </ul>
+                    &copy; All Rights Reserved, Company LTD
+                </div>
+            </div>
+        </footer>
+        <!-- /FOOTER -->
+    </div>
+    <!-- /WRAPPER -->
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="inner">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <!-- /PRELOADER -->
+
+    <!-- JAVASCRIPT FILES -->
+    <script>
+        let plugin_path = "assets/plugins/";
+    </script>
+    <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- REVOLUTION SLIDER -->
+    <script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/view/demo.revolution_slider.js"></script>
+
+    <!-- PAGE-LEVEL SCRIPTS -->
+    <script src="assets/js/contact.js"></script>
+
+    <!-- gMAP.JS - https://hpneo.github.io/gmaps/ -->
+    <script src="//maps.google.com/maps/api/js?key=YOUR_GOOGLE_MAP_API_KEY&callback=Function.prototype"></script>
+    <script src="assets/plugins/gmaps.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            /**
+              @BASIC GOOGLE MAP
+            **/
+            let map2 = new GMaps({
+                div: "#map2",
+                lat: -12.043333,
+                lng: -77.028333,
+                scrollwheel: false,
+            });
+
+            let marker = map2.addMarker({
+                lat: -12.043333,
+                lng: -77.028333,
+                title: "Company, Inc.",
+            });
+        });
+    </script>
+</body>
+</html>
